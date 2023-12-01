@@ -11,5 +11,4 @@
   <h3>Tags:{small_post.tags}</h3>
   <h3>Summary</h3>
   <p>{small_post.summary}</p>
-	<img src={small_post.imgage} alt="">
 {/each}
