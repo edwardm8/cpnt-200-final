@@ -1,15 +1,15 @@
-<!-- YOU CAN DELETE EVERYTHING IN THIS PAGE -->
+<script>
+  export let data;
 
-<div class="container h-full mx-auto flex justify-center items-center">
-	<div class="space-y-5">
-		<h1 class="h1">Let's get cracking bones!</h1>
-		<p>Start by exploring:</p>
-		<ul>
-			<li><code class="code">/src/routes/+layout.svelte</code> - barebones layout</li>
-			<li><code class="code">/src/app.postcss</code> - app wide css</li>
-			<li>
-				<code class="code">/src/routes/+page.svelte</code> - this page, you can replace the contents
-			</li>
-		</ul>
-	</div>
-</div>
+  let { blog_post_1 } = data
+	console.log(data)
+</script>
+
+{#each blog_post_1 as small_post}
+  <h1>{small_post.title}</h1>
+  <h2>Posted:{small_post.date}</h2>
+  <h3>Tags:{small_post.tags}</h3>
+  <h3>Summary</h3>
+  <p>{small_post.summary}</p>
+	<img src={small_post.imgage} alt="">
+{/each}
