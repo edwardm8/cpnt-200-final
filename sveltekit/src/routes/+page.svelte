@@ -3,6 +3,9 @@
 
   let { blog_post_1 } = data
 	console.log(data)
+
+  import Header from "../lib/components/Header.svelte";
+  import Footer from "../lib/components/Footer.svelte";
 </script>
 
 {#each blog_post_1 as small_post}
@@ -12,3 +15,9 @@
   <h3>Summary</h3>
   <p>{small_post.summary}</p>
 {/each}
+
+<!-- <h1>TEST</h1>
+
+<Header />
+
+<Footer /> -->
