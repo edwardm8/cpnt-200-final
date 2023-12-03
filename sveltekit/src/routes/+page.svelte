@@ -1,8 +1,8 @@
 <script>
   export let data;
-
+ 
   let { blog_post_1 } = data
-	console.log(data)
+  let { blog_post_2 } = data
 
   import Header from "../lib/components/Header.svelte";
   import Footer from "../lib/components/Footer.svelte";
@@ -17,6 +17,12 @@
   </a>
 {/each}
 
+{#each blog_post_2 as small_post}
+  <a href="/{small_post.id}" class="flex flex-col p-4">
+    <h1>{small_post.title}</h1>
+    <p>{small_post.paragraph}</p>
+  </a>
+{/each}
 <!-- <h1>TEST</h1>
 
 <Header />
