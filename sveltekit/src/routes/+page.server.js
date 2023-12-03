@@ -11,3 +11,4 @@ export const load = async (loadEvent) => {
     blog_post_2: blog
   }
 }
+

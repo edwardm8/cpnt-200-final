@@ -1,6 +1,7 @@
 <script>
   export let data;
  
+ 
   let { blog_post_1 } = data
   let { blog_post_2 } = data
 
