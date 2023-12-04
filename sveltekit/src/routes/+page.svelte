@@ -1,21 +1,12 @@
 <script>
   export let data;
  
- 
   let { blog_post_1 } = data
   let { blog_post_2 } = data
-
   
 </script>
 
-<!-- {#each blog_post_1 as small_post}
-  <a href="/{small_post.id}" class="flex flex-col p-4">
-    <h1>{small_post.title}</h1>
-    <h2>Posted:{small_post.date}</h2>
-    <h3>Tags:{small_post.tags}</h3>
-    <p>{small_post.summary}</p>
-  </a>
-{/each} -->
+<!-- Edward Blog -->
 
 <div class="pl-96 flex justify-center items-center min-h-screen">
   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -30,7 +21,7 @@
   </div>
 </div>
 
-
+<!-- John Blog -->
 
  <span class="pl-96 flex justify-center items-center text-center">
 <div class="pl-96 flex justify-center items-center min-h-screen">
