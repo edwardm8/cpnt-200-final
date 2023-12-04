@@ -8,7 +8,7 @@
   - Backend / Logic / Dynamic Routes
 
 - John 
-  - Frontend / Layout Design / Slight Backend Support
+  - Frontend / Layout Design / Minor Backend Support
 
   ## Submission Requirements
 
