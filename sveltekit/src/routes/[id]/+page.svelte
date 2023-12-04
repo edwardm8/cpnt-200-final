@@ -1,10 +1,11 @@
 <script>
   export let data
  
-  let { blog_post } = data
+  let { blog_post_1 } = data
+  
 </script>
 
-{#each blog_post as small_post}
+{#each blog_post_1 as small_post}
   <a href="/">
     <h1>{small_post.title}</h1>
     <h2>Posted:{small_post.date}</h2>
