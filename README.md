@@ -1,13 +1,13 @@
 # CPNT 200 Final Project
 
-## By: Edward Mah , Josh Dagsa
+## By: Edward Mah , John Dagsa
 
 ## Roles
 
 - Edward 
   - Backend 
 
-- Josh 
+- John 
   - Styling/frontend
 
   ## Attributions
