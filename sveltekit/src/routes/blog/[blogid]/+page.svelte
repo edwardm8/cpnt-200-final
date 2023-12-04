@@ -1,13 +1,12 @@
 <script>
   export let data
- 
-  let { blog_post_1 } = data
   
+  let { blog_post_2 } = data 
 </script>
 
 
 <div class="max-w-2xl mx-auto">
-  {#each blog_post_1 as small_post}
+  {#each blog_post_2 as small_post}
     <a href="/" class="block mb-10 p-6 border rounded-lg shadow-md hover:shadow-lg hover:bg-cyan-700 transition duration-700">
       <h1 class="text-4xl font-bold mb-2 text-white">{small_post.title}</h1>
       <h2 class="text-xl text-white font-bold mb-4">Written by: {small_post.author}</h2>
