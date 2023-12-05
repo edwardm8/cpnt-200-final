@@ -22,3 +22,7 @@
 ## Attributions
 
 [Pizza From Blog One](https://en.wikipedia.org/wiki/Pizza#/media/File:Pizza_slice_icon.png)
+
+**John Side Note**
+
+I coded on my PC at home and not on my laptop, and when commiting changes it would say "Your Name" instead of my GitHub username (jdvgsa).
