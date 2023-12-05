@@ -1,11 +1,11 @@
 <script>
   export let data
 
-  let { blog_post_2 } = data
+  let { blog_post_3 } = data
 </script>
 
 <div class="max-w-2xl mx-auto">
-  {#each blog_post_2 as small_post}
+  {#each blog_post_3 as small_post}
     <a href="/" class="block p-6 mb-10 transition duration-700 border rounded-lg shadow-md hover:shadow-lg hover:bg-gradient-to-r from-red-400 via-green-500 to-indigo-500">
       <h1 class="mb-2 text-3xl font-extrabold text-white sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">{small_post.title}</h1>
       <h2 class="mb-4 text-lg font-semibold text-gray-300 sm:text-xl md:text-2xl lg:text-3xl">By: {small_post.author}</h2>

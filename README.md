@@ -1,6 +1,6 @@
 # CPNT 200 Final Project
 
-## By: Edward Mah , John Dagsa
+## By: Edward Mah , John Dagsa, Akash Samra
 
 ## Roles
 
@@ -10,7 +10,10 @@
 - John 
   - Frontend / Layout Design / Minor Backend Support
 
-  ## Submission Requirements
+- Akash
+  - Frontend
+
+   ## Submission Requirements
 
 - [Live Deploy Link](https://cpnt-200-final-git-main-edwardm825-gmailcom.vercel.app/)
 - [GitHub Project Board Link](https://github.com/users/edwardm8/projects/3/views/1)

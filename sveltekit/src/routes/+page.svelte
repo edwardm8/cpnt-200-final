@@ -3,13 +3,13 @@
  
   let { blog_post_1 } = data
   let { blog_post_2 } = data
-  
+  let { blog_post_3 } = data
   </script>
 
-<h1 class="pt-4 text-white text-4xl text-center font-extrabold tracking-wide uppercase">
-  <span class="bg-gradient-to-r from-purple-600 to-pink-400 text-transparent bg-clip-text">Everything</span>
-  <span class="bg-gradient-to-r from-blue-600 to-cyan-300 text-transparent bg-clip-text">Everywhere</span>
-  <span class="bg-gradient-to-r from-green-500 to-yellow-400 text-transparent bg-clip-text">All at Once</span> Blog Spot
+<h1 class="pt-4 text-4xl font-extrabold tracking-wide text-center text-white uppercase">
+  <span class="text-transparent bg-gradient-to-r from-purple-600 to-pink-400 bg-clip-text">Everything</span>
+  <span class="text-transparent bg-gradient-to-r from-blue-600 to-cyan-300 bg-clip-text">Everywhere</span>
+  <span class="text-transparent bg-gradient-to-r from-green-500 to-yellow-400 bg-clip-text">All at Once</span> Blog Spot
 </h1>
 
 
@@ -17,14 +17,14 @@
 
 <!-- code for blog post with no design -->
 
-<!-- <div class="p-4 m-auto md:p-8 lg:p-12 flex justify-center items-center max-w-2xl">
+<!-- <div class="flex items-center justify-center max-w-2xl p-4 m-auto md:p-8 lg:p-12">
    <div>
     {#each blog_post_1 as small_post}
-      <a href="/{small_post.id}" class="flex justify-center bg-white p-6 md:p-8 lg:p-10 rounded-lg shadow-md hover:shadow-lg transition duration-300 transform hover:scale-105 flex flex-col items-center">
-        <h1 class="text-2xl md:text-3xl lg:text-4xl text-black font-bold mb-4 text-center">{small_post.title}</h1>
-        <h2 class="text-xl md:text-2xl lg:text-3xl text-black font-bold mb-4">Written by: {small_post.author}</h2>
-        <h2 class="text-xl md:text-2xl lg:text-3xl text-black font-bold mb-4">Posted: {small_post.date}</h2>
-        <h3 class="text-xl md:text-2xl lg:text-3xl text-black font-bold mb-4">Tags: {small_post.tags}</h3>
+      <a href="/{small_post.id}" class="flex flex-col items-center justify-center p-6 transition duration-300 transform bg-white rounded-lg shadow-md md:p-8 lg:p-10 hover:shadow-lg hover:scale-105">
+        <h1 class="mb-4 text-2xl font-bold text-center text-black md:text-3xl lg:text-4xl">{small_post.title}</h1>
+        <h2 class="mb-4 text-xl font-bold text-black md:text-2xl lg:text-3xl">Written by: {small_post.author}</h2>
+        <h2 class="mb-4 text-xl font-bold text-black md:text-2xl lg:text-3xl">Posted: {small_post.date}</h2>
+        <h3 class="mb-4 text-xl font-bold text-black md:text-2xl lg:text-3xl">Tags: {small_post.tags}</h3>
         <p class="text-black">{small_post.summary}</p>
       </a>
     {/each}
@@ -33,23 +33,23 @@
 
 <!-- edward's blog design 1 -->
 
-<div class="p-4 m-auto md:p-8 lg:p-12 flex justify-center items-center max-w-2xl space-y-6">
+<div class="flex items-center justify-center max-w-2xl p-4 m-auto space-y-6 md:p-8 lg:p-12">
   {#each blog_post_1 as small_post}
-     <a href="/{small_post.id}" class="bg-gradient-to-r from-blue-500 to-purple-500 p-6 md:p-8 lg:p-10 rounded-lg shadow-md hover:shadow-lg transition duration-300 transform hover:scale-105 flex flex-col items-center">
-       <h1 class="text-3xl lg:text-4xl md:text-3xl text-white font-bold mb-4 text-center">{small_post.title}</h1>
+     <a href="/{small_post.id}" class="flex flex-col items-center p-6 transition duration-300 transform rounded-lg shadow-md bg-gradient-to-r from-blue-500 to-purple-500 md:p-8 lg:p-10 hover:shadow-lg hover:scale-105">
+       <h1 class="mb-4 text-3xl font-bold text-center text-white lg:text-4xl md:text-3xl">{small_post.title}</h1>
        <div class="flex items-center text-gray-700">
-         <span class="text-lg font-bold mr-2">Written by:</span>
+         <span class="mr-2 text-lg font-bold">Written by:</span>
          <span class="text-lg font-semibold">{small_post.author}</span>
        </div>
        <div class="flex items-center text-gray-700">
-         <span class="text-lg font-bold mr-2">Posted:</span>
+         <span class="mr-2 text-lg font-bold">Posted:</span>
          <span class="text-lg font-semibold">{small_post.date}</span>
        </div>
        <div class="flex items-center text-gray-700">
-         <span class="text-lg font-bold mr-2">Tags:</span>
+         <span class="mr-2 text-lg font-bold">Tags:</span>
          <span class="text-lg font-semibold">{small_post.tags}</span>
        </div>
-       <p class="text-gray-200 mt-4">{small_post.summary}</p>
+       <p class="mt-4 text-gray-200">{small_post.summary}</p>
      </a>
   {/each}
 </div>
@@ -62,15 +62,15 @@
 
 <!-- code for blog no design -->
 
-<!-- <div class="p-4 md:p-12 flex justify-center items-center text-center">
-  <div class="flex justify-center items-center max-w-2xl">
+<!-- <div class="flex items-center justify-center p-4 text-center md:p-12">
+  <div class="flex items-center justify-center max-w-2xl">
     <div class="flex justify-center">
       {#each blog_post_2 as small_post}
-        <a href="/blog/{small_post.id}" class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300 transform hover:scale-105 w-full md:w-auto">
-          <h1 class="text-2xl text-black font-bold mb-4 text-center">{small_post.title}</h1>
-          <h2 class="text-xl text-black font-bold mb-4">Written by: {small_post.author}</h2>
+        <a href="/blog/{small_post.id}" class="w-full p-6 transition duration-300 transform bg-white rounded-lg shadow-md hover:shadow-lg hover:scale-105 md:w-auto">
+          <h1 class="mb-4 text-2xl font-bold text-center text-black">{small_post.title}</h1>
+          <h2 class="mb-4 text-xl font-bold text-black">Written by: {small_post.author}</h2>
           <p class="text-black">{small_post.paragraph}</p>
-          <p class="text-black pt-4">{small_post.date_created}</p>
+          <p class="pt-4 text-black">{small_post.date_created}</p>
         </a>
       {/each}
     </div>
@@ -79,19 +79,32 @@
 
 <!-- johns blog design 1 -->
 
-<div class="p-4 md:p-12 flex justify-center items-center text-center">
-  <div class="flex justify-center items-center max-w-2xl space-x-4">
+<div class="flex items-center justify-center p-4 text-center md:p-12">
+  <div class="flex items-center justify-center max-w-2xl space-x-4">
     {#each blog_post_2 as small_post}
-      <a href="/blog/{small_post.id}" class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 transform hover:scale-105 w-full md:w-auto bg-gradient-to-r from-yellow-500 to-green-500">
-        <h1 class="text-3xl text-purple-800 font-extrabold mb-4 text-center">{small_post.title}</h1>
-        <h2 class="text-lg text-gray-700 font-semibold mb-4">By {small_post.author}</h2>
+      <a href="/blog/{small_post.id}" class="w-full p-6 transition duration-300 transform bg-white rounded-lg shadow-lg hover:shadow-xl hover:scale-105 md:w-auto bg-gradient-to-r from-yellow-500 to-green-500">
+        <h1 class="mb-4 text-3xl font-extrabold text-center text-purple-800">{small_post.title}</h1>
+        <h2 class="mb-4 text-lg font-semibold text-gray-700">By {small_post.author}</h2>
         <p class="text-gray-800">{small_post.paragraph}</p>
-        <p class="text-gray-800 pt-4 text-sm">{small_post.date_created}</p>
+        <p class="pt-4 text-sm text-gray-800">{small_post.date_created}</p>
       </a>
     {/each}
   </div>
 </div>
 
+<!-- Akash blog design -->
+<div class="flex items-center justify-center p-4 text-center md:p-12">
+  <div class="flex items-center justify-center max-w-2xl space-x-4">
+    {#each blog_post_3 as small_post}
+      <a href="/route-3/{small_post.id}" class="w-full p-6 transition duration-300 transform bg-white rounded-lg shadow-lg hover:shadow-xl hover:scale-105 md:w-auto bg-gradient-to-r from-slate-500 to-gray-500">
+        <h1 class="mb-4 text-3xl font-extrabold text-center text-purple-800">{small_post.title}</h1>
+        <h2 class="mb-4 text-lg font-semibold text-gray-700">By {small_post.author}</h2>
+        <p class="text-gray-800">{small_post.paragraph}</p>
+        <p class="pt-4 text-sm text-gray-800">{small_post.date}</p>
+      </a>
+    {/each}
+  </div>
+</div>
 
 
 
