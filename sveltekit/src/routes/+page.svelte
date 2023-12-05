@@ -15,24 +15,6 @@
 
 <!-- Edward's Blog -->
 
-<!-- code for blog post with no design -->
-
-<!-- <div class="flex items-center justify-center max-w-2xl p-4 m-auto md:p-8 lg:p-12">
-   <div>
-    {#each blog_post_1 as small_post}
-      <a href="/{small_post.id}" class="flex flex-col items-center justify-center p-6 transition duration-300 transform bg-white rounded-lg shadow-md md:p-8 lg:p-10 hover:shadow-lg hover:scale-105">
-        <h1 class="mb-4 text-2xl font-bold text-center text-black md:text-3xl lg:text-4xl">{small_post.title}</h1>
-        <h2 class="mb-4 text-xl font-bold text-black md:text-2xl lg:text-3xl">Written by: {small_post.author}</h2>
-        <h2 class="mb-4 text-xl font-bold text-black md:text-2xl lg:text-3xl">Posted: {small_post.date}</h2>
-        <h3 class="mb-4 text-xl font-bold text-black md:text-2xl lg:text-3xl">Tags: {small_post.tags}</h3>
-        <p class="text-black">{small_post.summary}</p>
-      </a>
-    {/each}
-  </div>
-</div> -->
-
-<!-- edward's blog design 1 -->
-
 <div class="flex items-center justify-center max-w-2xl p-4 m-auto space-y-6 md:p-8 lg:p-12">
   {#each blog_post_1 as small_post}
      <a href="/{small_post.id}" class="flex flex-col items-center p-6 transition duration-300 transform rounded-lg shadow-md bg-gradient-to-r from-blue-500 to-purple-500 md:p-8 lg:p-10 hover:shadow-lg hover:scale-105">
@@ -56,28 +38,7 @@
 
 
 
-
-
 <!-- John's Blog -->
-
-<!-- code for blog no design -->
-
-<!-- <div class="flex items-center justify-center p-4 text-center md:p-12">
-  <div class="flex items-center justify-center max-w-2xl">
-    <div class="flex justify-center">
-      {#each blog_post_2 as small_post}
-        <a href="/blog/{small_post.id}" class="w-full p-6 transition duration-300 transform bg-white rounded-lg shadow-md hover:shadow-lg hover:scale-105 md:w-auto">
-          <h1 class="mb-4 text-2xl font-bold text-center text-black">{small_post.title}</h1>
-          <h2 class="mb-4 text-xl font-bold text-black">Written by: {small_post.author}</h2>
-          <p class="text-black">{small_post.paragraph}</p>
-          <p class="pt-4 text-black">{small_post.date_created}</p>
-        </a>
-      {/each}
-    </div>
-  </div>
-</div> -->
-
-<!-- johns blog design 1 -->
 
 <div class="flex items-center justify-center p-4 text-center md:p-12">
   <div class="flex items-center justify-center max-w-2xl space-x-4">
@@ -92,7 +53,9 @@
   </div>
 </div>
 
+
 <!-- Akash blog design -->
+
 <div class="flex items-center justify-center p-4 text-center md:p-12">
   <div class="flex items-center justify-center max-w-2xl space-x-4">
     {#each blog_post_3 as small_post}
