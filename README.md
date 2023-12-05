@@ -13,7 +13,7 @@
 - Akash
   - Frontend
 
-   ## Submission Requirements
+   ## Submission Requirements 
 
 - [Live Deploy Link](https://cpnt-200-final-git-main-edwardm825-gmailcom.vercel.app/)
 - [GitHub Project Board Link](https://github.com/users/edwardm8/projects/3/views/1)
