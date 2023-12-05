@@ -32,10 +32,10 @@
          <span class="text-lg font-semibold">{small_post.tags}</span>
        </div>
        <p class="mt-4 text-gray-200">{small_post.summary}</p>
+       <p><img src="../images/pizza.png" alt="pizza"></p>
      </a>
   {/each}
 </div>
-
 
 
 <!-- John's Blog -->
@@ -48,7 +48,7 @@
         <h2 class="mb-4 text-lg font-semibold text-gray-700">By {small_post.author}</h2>
         <p class="text-gray-800">{small_post.paragraph}</p>
         <p class="pt-4 text-sm text-gray-800">{small_post.date_created}</p>
-      </a>
+        </a>
     {/each}
   </div>
 </div>
